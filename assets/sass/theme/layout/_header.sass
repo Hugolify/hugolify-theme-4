@@ -14,17 +14,17 @@ header[role="banner"]
             height: 20px
     .nav-primary
         --bs-nav-link-font-weight: 700
-        li:last-child
-            a
-                --bs-nav-link-color: white
+    .nav-item-highlighted
+        a
+            --bs-nav-link-color: white
+            --bs-nav-link-active-color: white
+            background: $primary
+            text-decoration: none
+            transition: background $transition-effect $transition-duration
+            &:hover
                 --bs-nav-link-hover-color: white
-                --bs-nav-link-active-color: white
-                background: $primary
-                text-decoration: none
-                transition: background $transition-effect $transition-duration
-                &:hover
-                    background: darken($primary, 2)
-            @include media-breakpoint-down(md)
-                margin-top: $nav-link-padding-y
-            @include media-breakpoint-up(md)
-                margin-left: $nav-link-padding-x
+                background: darken($primary, 2)
+        @include media-breakpoint-down(md)
+            margin-top: $nav-link-padding-y
+        @include media-breakpoint-up(md)
+            margin-left: $nav-link-padding-x
