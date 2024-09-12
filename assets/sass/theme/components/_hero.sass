@@ -1,3 +1,13 @@
 .hero
-    &-cover + .container
-        color: white
+    h1
+        line-height: 1
+    &-cover 
+        & + .container
+            color: white
+    &-with-image
+        h1
+            line-height: 1
+        .hero-content
+            @extend .col-xl-6
+    &-media
+        @extend .col-xl-5
