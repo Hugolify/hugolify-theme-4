@@ -2,9 +2,12 @@
     .content
         @include padding(3rem)
         background: $tertiary
-        border: $border-width solid $border-color
-        transform: translateY(-20px)
+        border: $border-width solid $secondary
+        transform: translateY(-40px)
         z-index: 1
+    @include media-breakpoint-down(md)
+        .media
+            margin-bottom: 0 !important
     @include media-breakpoint-up(md)
         .media
             transform: translateX(-10%)
