@@ -1,17 +1,14 @@
 .card
-    .items &
-        --bs-card-bg: #{$tertiary}
-        --bs-card-cap-padding-x: 1rem
-        --bs-card-spacer-x: 1rem
-        --bs-card-spacer-y: 1rem
-        border: $border-width solid $secondary
-        height: 100%
-        .media
-            border-bottom: $border-width solid $secondary
-            margin-bottom: 0
-            &-icon,
-            &-logo
-                border-bottom: 0
-        .surtitle
-            --bs-badge-color: #{$primary}
-            background-color: rgba($secondary, .3)
+    --bs-card-bg: #{$tertiary}
+    --bs-card-cap-padding-x: 1rem
+    --bs-card-spacer-x: 1rem
+    --bs-card-spacer-y: 1rem
+    height: 100%
+    .media
+        margin-bottom: 0
+        &-icon,
+        &-logo
+            border-bottom: 0
+    .surtitle
+        --bs-badge-color: #{$primary}
+        background-color: rgba($secondary, .3)
