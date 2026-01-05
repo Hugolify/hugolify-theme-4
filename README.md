@@ -9,7 +9,8 @@ imports:
   - path: github.com/hugolify/hugolify-theme-4
 ```
 
-Add this import in `assets/sass/main.sass`
+**Before hugolify-theme v1.26.26:**\
+Add this import in `assets/sass/main.sass` 
 
 ```sass
 /*! purgecss start ignore */
